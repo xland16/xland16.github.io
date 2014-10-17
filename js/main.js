@@ -4,6 +4,21 @@ window.xland = {
 	
 	init : function()
 	{
+		$('body').imagesLoaded( function() {
+			setTimeout(function() {
+			      
+			      // Resize sections
+			      window.xland.adjustWindow();
+			      
+			      // Fade in sections
+				  $('body').removeClass('loading').addClass('loaded');
+				  
+			}, 800);
+		});
+	},
+	
+	adjustWindow : function()
+	{
 	    // Init Skrollr
 	    var s = skrollr.init({
 	        render: function(data) {
@@ -13,6 +28,18 @@ window.xland = {
    		});
 
    		var height = $(window).height();
-   		//$("#slide-1").height(height);
+
+   		// Keep minimum height 550
+	    if(height <= 550)
+	    {
+			height = 550;
+		} 
+
+   		$(".homeSlide").height(height);
+		$(".homeSlideTall").height(height*2);
+   		$(".homeSlideTall2").height(height*3);
+
+   		s.refresh('.homeSlide');
+   		
 	}
 };

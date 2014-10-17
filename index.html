@@ -2,7 +2,7 @@
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<!--[if gt IE 8]>	   <html class="no-js"> <![endif]-->
 
     <head>
        <link rel="stylesheet" href="css/main.css">
@@ -31,25 +31,109 @@
 	        	</div>
 		    </section>
 
-		    <section id="slide-2">
-		    	<div class="bcg">
+		    <section id="slide-2" class="homeSlide homeSlideTall">
+		    	<div class="bcg"
+		    		data-top="opacity: 1;"
+		    		data--33p-top="opacity: 1;"
+		    		data--66p-top="opacity: 0;"
+		    		data-anchor-target="#slide-2">
 			    	&nbsp;
 		    	</div>
-		    	<div class="bcg bcg2" data-bottom-top="opacity: 0;" data--33p-top="opacity: 0;" data--66p-top="opacity: 1;" data-anchor-target="#slide-2">
+		    	<div class="bcg bcg2"
+		    		data-bottom-top="opacity:0;"
+		    		data-top="opacity: 0;"
+		    		data--33p-top="opacity: 1;"
+		    		data-top-bottom="opacity: 0;"
+		    		data-anchor-target="#slide-2">
 			    	<div class="hsContainer">
-				    	<div class="hsContent" data-bottom-top="opacity: 0;" data-center="opacity: 1" data-anchor-target="#slide-2">
+				    	<div class="hsContent"
+				    		data-top-bottom="background-position: 50% -100px; opacity: 0"
+				    		data-center="opacity: 1"
+				    		data-top-center="opacity: 0"
+				    		data-anchor-target="#slide-2">
 				    		<h2>About Me</h2>
-				    		<p>Sup. I'm Tom. I'm a recent graduate of the University of Virginia, earning my Bachelors of Science in Computer Science. Since August 2013, I've been a developer and consultant with <a target="_blank" href="http://www.c20g.com">Counterpoint Consulting</a>. My interests include Web Development, Human-Computer Interaction, Computer-Aided Design, and Animation. In my free time, I enjoy theme parks, music, and gourmet pizzas.</p>
+				    		<p>Sup. I'm Tom. I'm a recent graduate of the University of Virginia, earning my Bachelors of Science in Computer Science. For over a year, I've been a developer for <a target="_blank" href="http://www.c20g.com">Counterpoint Consulting</a> and the <a target="_blank" href="http://www.worldbank.org/">World Bank</a>. My interests include Web Development, Human-Computer Interaction, Computer-Aided Design, and Animation. In my free time, I enjoy theme parks, music, and gourmet pizzas.</p>
 			    		</div>
 			    	</div>
 		    	</div>
 		    </section>
+
+		    <section id="slide-3" class="homeSlide">
+	        	<div class="bcg"
+	        		data-bottom-top="opacity: 1"
+	        		data-center="background-position: 50% 0px;"
+	        		data-top-bottom="background-position: 50% -100px;"
+	        		data-anchor-target="#slide-3">
+		        	<div class="hsContainer">
+			    		<div class="hsContent"
+			    			data-center="opacity: 1"
+			    			data-anchor-target="#slide-3 h2">
+				    		<h2>Projects</h2>
+				    		<p>Check out some cool project I've recently done.</p>
+				    		<ul class="polaroids">
+						        <li>
+						          <a target="_blank" href="./classes/CV/CV_1/WRITEUP.html">
+						            <img src="img/polaroids/CV_1.jpg" alt="Photo Missing">Corner &amp; Edge Detection
+						          </a>
+						        </li>
+						        <li>
+						          <a target="_blank" href="./classes/CV/CV_2/WRITEUP.html">
+						            <img src="img/polaroids/CV_2.jpg" alt="Photo Missing">Face Detection
+						          </a>
+						        </li>
+						        <li>
+						          <a target="_blank" href="./classes/CV/CV_3/WRITEUP.html">
+						            <img src="img/polaroids/CV_3.jpg" alt="Photo Missing">Optical Flow
+						          </a>
+						        </li>
+						        <li>
+						          <a target="_blank" href="./classes/CV/CV_4/WRITEUP.html">
+						            <img src="img/polaroids/CV_4.jpg" alt="Photo Missing">Disparity Mapping
+						          </a>
+						        </li>
+						        <li>
+						          <a target="_blank" href="./classes/CV/CV_FINAL/WRITEUP.html">
+						            <img src="img/polaroids/CV_FINAL.jpg" alt="Photo Missing">Poisson Image Blending
+						          </a>
+						        </li>
+						        <li>
+						          <a target="_blank" href="./classes/GR/GR_1/WRITEUP.html">
+						            <img src="img/polaroids/GR_1.jpg" alt="Photo Missing">Image Processing
+						          </a>
+						        </li>
+						        <li>
+						          <a target="_blank" href="./classes/GR/GR_2/WRITEUP.html">
+						            <img src="img/polaroids/GR_2.jpg" alt="Photo Missing">Ray Tracing
+						          </a>
+						        </li>
+						        <li>
+						          <a target="_blank" href="./classes/GR/GR_3/WRITEUP.html">
+						            <img src="img/polaroids/GR_3.jpg" alt="Photo Missing">OpenGL
+						          </a>
+						        </li>
+						        <li>
+						          <a target="_blank" href="./classes/AM/AM_FINAL/WRITEUP.html">
+						            <img src="img/polaroids/AM_FINAL.jpg" alt="Photo Missing">Modeling Diffuse Fluorescence
+						          </a>
+						        </li>
+						        <li>
+						          <a target="_blank" href="./DA.html">
+						            <img src="img/polaroids/DA.jpg" alt="Photo Missing">Digital Animation
+						          </a>
+						        </li>
+						      </ul>
+			    		</div>
+		        	</div>
+	        	</div>
+		    </section>	
 		</main>
 
 
         <script src="js/jquery-1.9.1.min.js"></script>
         <script src="js/skrollr.js"></script>
+        <script src="js/imagesloaded.js"></script>
         <script src="js/main.js"></script>
+
         <script>
         	$(document).ready(function () {
         		window.xland.init();
