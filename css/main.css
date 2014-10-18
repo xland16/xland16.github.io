@@ -178,7 +178,7 @@ main {
 /* Slide 2 */
 #slide-2 {position: relative;}
 #slide-2 .bcg {background-image:url('../img/poobin.jpg'); }
-#slide-2 .bcg2 {background-image:url('../img/poobinblurred.jpg'); position: fixed; bottom: 0; left: 0; opacity: 0; z-index:1;}
+#slide-2 .bcg2 {background-image:url('../img/poobinblurred.jpg'); position: fixed; bottom: 0; left: 0; opacity: 0; z-index:2;}
 #slide-2 p {
     color: #ddd;
     text-align: left;
@@ -186,7 +186,7 @@ main {
 
 
 /* Slide 3 */
-#slide-3 .bcg {background: none; background-color: #222; z-index: 2;}
+#slide-3 .bcg {background: none; background-color: #222;}
 
 
 /*#slide-3 .bcg2 {background: none; background-color: #bb00bb;); position: fixed; bottom: 0; left: 0; opacity: 0; z-index: 1}
@@ -194,8 +194,7 @@ main {
 */
 
 /* Slide 4 */
-#slide-4 {position: relative;}
-#slide-4 .bcg {background-image:url('../img/pizza.jpg'); position: fixed; bottom: 0; left: 0; opacity: 0; z-index: -1;}
+#slide-4 .bcg {background-image:url('../img/pizza.jpg'); position: fixed; bottom: 0; left: 0; opacity: 0; z-index: 3;}
 
 .hsContainer {
     display: table;
@@ -434,6 +433,11 @@ main {
     h3 {
         page-break-after: avoid;
     }
+}
+
+.resume {
+    position: relative;
+    z-index: 5;
 }
 
 ul.polaroids {z-index: 5;}
