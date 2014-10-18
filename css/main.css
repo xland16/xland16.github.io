@@ -195,9 +195,7 @@ main {
 
 /* Slide 4 */
 #slide-4 {position: relative;}
-#slide-4 .bcg {background-image:url('../img/poobin.jpg')}
-#slide-4 .bcg2 {background-image:url('../img/poobinblurred.jpg'); position: fixed; bottom: 0; left: 0; opacity: 0; z-index: 3}
-#slide-4 .bcg3 {background: none; background-color: #010101; position: fixed; bottom: 0; left: 0; opacity: 0; z-index: 4}
+#slide-4 .bcg {background-image:url('../img/pizza.jpg'); position: fixed; bottom: 0; left: 0; opacity: 0; z-index: -1;}
 
 .hsContainer {
     display: table;
@@ -460,11 +458,19 @@ ul.polaroids img { height: 150px; width: 150px;}
 
 .hsContent a.btn {
     position: relative;
-    min-width: 150px;
     color: #473C8B;
 }
 
 .main-btn-grp .btn {
+    margin: 0px 20px;
+    min-width: 150px;
+}
+
+.end-btn-grp {
+    margin-top: 20px;
+}
+
+.end-btn-grp .btn {
     margin: 0px 20px;
 }
 
