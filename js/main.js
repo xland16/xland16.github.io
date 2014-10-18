@@ -40,6 +40,5 @@ window.xland = {
    		$(".homeSlideTall2").height(height*3);
 
    		s.refresh('.homeSlide');
-   		
 	}
 };
