@@ -36,6 +36,7 @@ window.xland = {
 		} 
 
    		$(".homeSlide").height(height);
+   		$(".homeSlideMin").css("min-height",height);
 		$(".homeSlideTall").height(height*2);
    		$(".homeSlideTall2").height(height*3);
 
