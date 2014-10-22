@@ -173,20 +173,20 @@ main {
     width: 100%;
 }
 /* Slide 1 */
-#slide-1 .bcg {background-image:url('../img/morketidettermiddag.jpg');}
+#home .bcg {background-image:url('../img/morketidettermiddag.jpg');}
 
 /* Slide 2 */
-#slide-2 {position: relative;}
-#slide-2 .bcg {background-image:url('../img/poobin.jpg'); }
-#slide-2 .bcg2 {background-image:url('../img/poobinblurred.jpg'); position: fixed; bottom: 0; left: 0; opacity: 0; z-index:2;}
-#slide-2 p {
+#aboutme {position: relative;}
+#aboutme .bcg {background-image:url('../img/poobin.jpg'); }
+#aboutme .bcg2 {background-image:url('../img/poobinblurred.jpg'); position: fixed; bottom: 0; left: 0; opacity: 0; z-index:2;}
+#aboutme p {
     color: #ddd;
     text-align: left;
 }
 
 
 /* Slide 3 */
-#slide-3 .bcg {background: none; background-color: #222;}
+#projects .bcg {background: none; background-color: #222;}
 
 
 /*#slide-3 .bcg2 {background: none; background-color: #bb00bb;); position: fixed; bottom: 0; left: 0; opacity: 0; z-index: 1}
@@ -194,7 +194,7 @@ main {
 */
 
 /* Slide 4 */
-#slide-4 .bcg {background-image:url('../img/pizza.jpg'); position: fixed; bottom: 0; left: 0; opacity: 0; z-index: 3;}
+#contact .bcg {background-image:url('../img/pizza.jpg'); position: fixed; bottom: 0; left: 0; opacity: 0; z-index: 3;}
 
 .hsContainer {
     display: table;
@@ -490,4 +490,61 @@ ul.polaroids img { height: 150px; width: 150px;}
 .main-divider {
     max-width: 400px;
     margin: 20px auto;
+}
+
+
+
+
+.app-nav{
+    position: fixed;
+    width: 70px;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    z-index: 101; 
+}
+.app-nav ul{
+    position: relative;
+}
+.app-nav li{
+    display: inline-block; 
+    margin-bottom: 7px;
+}
+.app-nav li a{
+    display: block; 
+    height: 16px;
+    width: 16px;
+    border: none;
+    background: #FFF;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+    margin: 0;
+    position: relative; 
+}
+.app-nav li a span{
+    display: none; 
+    position: absolute; 
+    color: #FFF; 
+    font-family: 'Open Sans', sans-serif;
+    font-size:14px;
+    left: -110px; 
+    text-align: right;
+    top: -2px;
+    width: 100px;
+}
+.app-nav li:hover a, 
+.app-nav li.active a{
+    border: 3px solid #FFF;
+    padding: 0;
+    background: transparent;
+}
+.app-nav li.active a span, 
+.app-nav li:hover a span{
+    top: -5px;
+    left: -113px;
+}
+.app-nav li:hover a span{
+    display: block;
 }

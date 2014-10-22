@@ -25,16 +25,16 @@
             <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
         <![endif]-->
        	<main>
-			<section id="slide-1" class="homeSlide">
+			<section id="home" class="homeSlide">
 	        	<div class="bcg"
 	        		data-center="background-position: 50% 0px;"
 	        		data-top-bottom="background-position: 50% -100px;"
-	        		data-anchor-target="#slide-1">
+	        		data-anchor-target="#home">
 		        	<div class="hsContainer">
 			    		<div class="hsContent"
 			    			data-center="opacity: 1"
 			    			data-106-top="opacity: 0"
-			    			data-anchor-target="#slide-1 .main-divider">
+			    			data-anchor-target="#home .main-divider">
 				    		<h2>Thomas Crossland</h2>
 				    		<p>Developer, Counterpoint Consulting</p>
 				    		<hr class="main-divider" />
@@ -47,12 +47,12 @@
 	        	</div>
 		    </section>
 
-		    <section id="slide-2" class="homeSlide homeSlideTall">
+		    <section id="aboutme" class="homeSlide homeSlideTall">
 		    	<div class="bcg"
 		    		data-top="opacity: 1;"
 		    		data--33p-top="opacity: 1;"
 		    		data--66p-top="opacity: 0;"
-		    		data-anchor-target="#slide-2">
+		    		data-anchor-target="#aboutme">
 			    	&nbsp;
 		    	</div>
 		    	<div class="bcg bcg2"
@@ -60,13 +60,13 @@
 		    		data-top="opacity: 0; visibility: visible"
 		    		data--33p-top="opacity: 1; visibility: visible"
 		    		data-top-bottom="opacity: 0; visibility: hidden"
-		    		data-anchor-target="#slide-2">
+		    		data-anchor-target="#aboutme">
 			    	<div class="hsContainer">
 				    	<div class="hsContent"
 				    		data-top-bottom="background-position: 50% -100px; opacity: 0"
 				    		data-center="opacity: 1"
 				    		data-top-center="opacity: 0"
-				    		data-anchor-target="#slide-2">
+				    		data-anchor-target="#aboutme">
 				    		<h2>Hi, I'm Tom.</h2>
 				    		<p>Recent graduate of the University of Virginia. Developer for <a target="_blank" href="http://www.c20g.com">Counterpoint Consulting</a> and the <a target="_blank" href="http://www.worldbank.org/">World Bank</a>. Trivia buff and connoisseur of fine sweaters. Interests include web development, user interfaces, computer-aided design, and animation. In my spare time, I enjoy theme parks, music, and making gourmet pizzas. Currently based in Arlington, VA.</p>
 			    		</div>
@@ -74,16 +74,16 @@
 		    	</div>
 		    </section>
 
-		    <section id="slide-3" class="homeSlideMin">
+		    <section id="projects" class="homeSlideMin">
 	        	<div class="bcg"
 	        		data-bottom-top="opacity: 1"
 	        		data-center="background-position: 50% 0px;"
 	        		data-top-bottom="background-position: 50% -100px;"
-	        		data-anchor-target="#slide-3">
+	        		data-anchor-target="#projects">
 		        	<div class="hsContainer">
 			    		<div class="hsContent"
 			    			data-center="opacity: 1"
-			    			data-anchor-target="#slide-3 h2">
+			    			data-anchor-target="#projects h2">
 				    		<h2>Projects</h2>
 				    		<p>Check out some cool projects I've recently done.</p>
 				    		<p>Be sure to view my full <a class="resume" target="_blank" href="./Thomas%20Crossland%20Resume.pdf">r&eacute;sum&eacute;</a>.</p>
@@ -146,17 +146,17 @@
 	        	</div>
 		    </section>	
 
-			<section id="slide-4" class="homeSlide">
+			<section id="contact" class="homeSlide">
 		    	<div class="bcg"
 		    		data-bottom-top="opacity: 0; visibility:hidden;"
 		    		data-350-bottom="opacity: 0; visibility:visible;"
 		    		data-100-bottom="opacity: 1; visibility:visible;"
-		    		data-anchor-target="#slide-4">
+		    		data-anchor-target="#contact">
 			    	<div class="hsContainer">
 				    	<div class="hsContent"
 				    		data-100-bottom="opacity: 0;"
 				    		data-bottom="opacity: 1;"
-				    		data-anchor-target="#slide-4">
+				    		data-anchor-target="#contact">
 				    		<h2>Contact Me</h2>
 				    		<p>Thomas Crossland</p>
 				    		<p><a href="mailto:tcrossland@c20g.com" target="_blank">tcrossland@c20g.com</a></p>
@@ -171,9 +171,34 @@
 
 		</main>
 
+		<nav class="app-nav" style="opacity:0;">
+			<ul>
+				<li data-page="1" data-name="home" class="active">
+					<a href="#home">
+						<span>Home</span>
+					</a>
+				</li>
+				<li data-page="2" data-name="aboutme">
+					<a href="#aboutme">
+						<span>About Me</span>
+					</a>
+				</li>
+				<li data-page="3" data-name="projects">
+					<a href="#projects">
+						<span>Projects</span>
+					</a>
+				</li>
+				<li data-page="4" data-name="contact">
+					<a href="#contact">
+						<span>Contact Me</span>
+					</a>
+				</li>
+			</ul>
+		</nav>
 
         <script src="js/jquery-1.9.1.min.js"></script>
         <script src="js/skrollr.js"></script>
+        <script src="js/skrollr.menu.js"></script>
         <script src="js/imagesloaded.js"></script>
         <script src="js/main.js"></script>
 

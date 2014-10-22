@@ -2,8 +2,12 @@
 
 window.xland = {
 	
+	currPage : 0,
+
 	init : function()
 	{
+		window.xland.currPage = 0;
+		
 		$('body').imagesLoaded( function() {
 			setTimeout(function() {
 			      
@@ -19,15 +23,40 @@ window.xland = {
 	
 	adjustWindow : function()
 	{
+		var height = $(window).height();
+
+		var navHeight = $('.app-nav ul').height();
+		var pos = (height/2) - (navHeight/2);
+		$('.app-nav').css('top',pos + "px");
+
+		$('.app-nav').css('opacity', 1);
+
 	    // Init Skrollr
 	    var s = skrollr.init({
 	        render: function(data) {
-	            //Debugging - Log the current scroll position.
-	            //console.log(data.curTop);
+
+		        //update wmenu
+		        var highlightLink = null;
+		        $(".wmenu a[data-menu-top]").each(function() {
+		        	
+		        	var menuTop = $(this).attr("data-menu-top");
+
+		        	if (data.curTop >= menuTop) {
+		        		highlightLink = $(this);
+		        	}
+
+		        	$(this).removeClass("active");
+		        })
+
+		        if (highlightLink) {
+		        	highlightLink.addClass("active");
+		        }
 	        }
    		});
 
-   		var height = $(window).height();
+   		skrollr.menu.init(s);
+
+   		
 
    		// Keep minimum height 550
 	    if(height <= 550)
@@ -41,5 +70,56 @@ window.xland = {
    		$(".homeSlideTall2").height(height*3);
 
    		s.refresh('.homeSlide');
-	}
+
+   		window.xland.getNavPos();
+   		window.xland.getHash();
+	},
+
+	getHash: function()
+	{
+		var hash = location.hash.replace('#','');
+
+		if (hash)
+		{
+			var link = $('.app-nav li[data-name='+hash+"] a")[0];
+			skrollr.menu.click(link);
+		}
+	},
+
+	getNavPos : function()
+	{
+		var slide1 = $('#home').height();
+		var slide2 = $('#aboutme').height();
+		var slide3 = $('#projects').height();
+
+   		$(window).scroll(function(e) {
+	        var winTop = $("body").scrollTop();
+
+	        var panel;
+
+	        if (winTop < slide1)
+	        {
+	        	panel = 1;
+	        }
+	        else if (winTop < slide1 + slide2)
+	        {
+	        	panel = 2;
+	        }
+	        else if (winTop < slide1 + slide2 + slide3)
+	        {
+	        	panel = 3;
+	        }
+	        else
+	        {
+	        	panel = 4;
+	        }
+
+	        if (panel != window.xland.currPage)
+	        {
+	        	$('.app-nav li[data-page='+window.xland.currPage+"]").removeClass('active');
+	        	$('.app-nav li[data-page='+panel+"]").addClass('active');
+	        	window.xland.currPage = panel;
+	        }
+	    });
+	},
 };
