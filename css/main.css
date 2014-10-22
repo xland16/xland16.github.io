@@ -515,8 +515,9 @@ ul.polaroids img { height: 150px; width: 150px;}
     display: block; 
     height: 16px;
     width: 16px;
-    border: none;
-    background: #FFF;
+    border: 2px solid #FFF;
+    padding: 0;
+    background: transparent;
     -webkit-border-radius: 8px;
     -moz-border-radius: 8px;
     border-radius: 8px;
@@ -536,9 +537,8 @@ ul.polaroids img { height: 150px; width: 150px;}
 }
 .app-nav li:hover a, 
 .app-nav li.active a{
-    border: 3px solid #FFF;
-    padding: 0;
-    background: transparent;
+    border: none;
+    background: #FFF;
 }
 .app-nav li.active a span, 
 .app-nav li:hover a span{
