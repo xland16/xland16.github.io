@@ -7,7 +7,7 @@ window.xland = {
 	init : function()
 	{
 		window.xland.currPage = 0;
-		
+
 		$('body').imagesLoaded( function() {
 			setTimeout(function() {
 			      
@@ -28,7 +28,6 @@ window.xland = {
 		var navHeight = $('.app-nav ul').height();
 		var pos = (height/2) - (navHeight/2);
 		$('.app-nav').css('top',pos + "px");
-
 		$('.app-nav').css('opacity', 1);
 
 	    // Init Skrollr
@@ -54,7 +53,7 @@ window.xland = {
 	        }
    		});
 
-   		skrollr.menu.init(s);
+   		
 
    		
 
@@ -68,8 +67,9 @@ window.xland = {
    		$(".homeSlideMin").css("min-height",height);
 		$(".homeSlideTall").height(height*2);
    		$(".homeSlideTall2").height(height*3);
-
+		
    		s.refresh('.homeSlide');
+   		skrollr.menu.init(s);
 
    		window.xland.getNavPos();
    		window.xland.getHash();
