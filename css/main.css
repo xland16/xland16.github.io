@@ -126,6 +126,12 @@ h1,h2 {
   margin-bottom: 40px;
 }
 
+.contact-info .lead {
+  text-transform: uppercase;
+  color: #999;
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
 .social .btn-circle {
   font-size: 30px;
   width: 65px;
