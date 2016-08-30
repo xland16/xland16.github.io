@@ -16,7 +16,8 @@ a {
 
 @media (min-width: 768px) {
   .img-circle {  
-    max-width: 100%;
+    max-width: 300px;
+    width: 100%;
   }
 }
 
@@ -88,14 +89,27 @@ h1,h2 {
 }
 
 .projects-section {
-  width: 100%;
+  width: 330px;
   padding: 50px 0;
+  margin: auto;
   color: white;
   background: 0;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
   -o-background-size: cover;
+}
+
+@media (min-width: 500px) {
+  .projects-section {
+    width: 535px;
+  }
+}
+
+@media (min-width: 714px) {
+  .projects-section {
+    width: 100%;
+  }
 }
 
 .contact-section {
@@ -154,7 +168,26 @@ footer {
 /* Polaroids */
 ul.polaroids {z-index: 5;}
 ul.polaroids li { display: inline; }
-ul.polaroids a { position: relative; z-index: 5; background: #fff; display: inline; float: left; margin: 0 0 27px 30px; width: auto; padding: 10px 10px 15px; text-align: center; font-family: "Marker Felt", sans-serif; text-decoration: none; color: #333; font-size: 12px; -webkit-box-shadow: 0 3px 6px rgba(0,0,0,.25); -moz-box-shadow: 0 3px 6px rgba(0,0,0,.25); -webkit-transform: rotate(-2deg); -webkit-transition: -webkit-transform .15s linear; -moz-transform: rotate(-2deg); }
+ul.polaroids a { 
+  position: relative;
+  z-index: 5;
+  background: #fff;
+  display: inline;
+  float: left;
+  margin: 0 15px 27px 15px;
+  width: auto;
+  padding: 10px 10px 15px;
+  text-align: center;
+  font-family: "Marker Felt", sans-serif;
+  text-decoration: none;
+  color: #333;
+  font-size: 12px;
+  -webkit-box-shadow: 0 3px 6px rgba(0,0,0,.25);
+  -moz-box-shadow: 0 3px 6px rgba(0,0,0,.25);
+  -webkit-transform: rotate(-2deg);
+  -webkit-transition: -webkit-transform .15s linear;
+  -moz-transform: rotate(-2deg);
+}
 ul.polaroids img { display: block; width: 190px; margin-bottom: 12px; }
 ul.polaroids a:after { content: attr(title); }
 
