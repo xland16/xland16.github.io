@@ -1,3 +1,6 @@
+body {
+  font-family: "Lato", sans-serif;
+}
 
 a.btn-default {
     position: relative;
@@ -83,7 +86,7 @@ h1,h2 {
 
 .about-section {
   width: 100%;
-  padding: 100px 0;
+  padding: 200px 0;
   color: #333;
   background-color: white;
 }
@@ -114,7 +117,7 @@ h1,h2 {
 
 .contact-section {
   width: 100%;
-  padding: 100px 0;
+  padding: 200px 0;
   color: white;
   background-color: #111;
   text-align: center;
@@ -143,7 +146,7 @@ h1,h2 {
 .contact-info .lead {
   text-transform: uppercase;
   color: #999;
-  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
 }
 
 .social .btn-circle {
