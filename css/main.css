@@ -1,5 +1,5 @@
 body {
-  font-family: "Lato", sans-serif;
+  font-family: "Lato", Helvetica, sans-serif;
 }
 
 a.btn-default {
@@ -8,9 +8,16 @@ a.btn-default {
 }
 
 a {
-  color: #50D0D0;;
+  color: #45ccba;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
-
+a:hover,
+a:focus {
+  text-decoration: none;
+  color: #3cada7;
+}
 .img-circle {
   max-width: 200px;
   border: #ddd 1px solid;
