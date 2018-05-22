@@ -2,22 +2,24 @@ body {
   font-family: "Lato", Helvetica, sans-serif;
 }
 
-a.btn-default {
-    position: relative;
-    color: #473C8B;
-}
-
 a {
   color: #45ccba;
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
+
+a.btn-default {
+    position: relative;
+    color: #473C8B;
+}
+
 a:hover,
 a:focus {
   text-decoration: none;
   color: #3cada7;
 }
+
 .img-circle {
   max-width: 200px;
   border: #ddd 1px solid;
@@ -43,7 +45,6 @@ a:focus {
   align-items: center;
 }
 
-
 .bg {
   background: 0;
   position: fixed;
@@ -57,7 +58,6 @@ a:focus {
   background-size: cover;
   -o-background-size: cover;
 }
-
 
 .intro-title {
     margin-bottom: 12px;
@@ -85,7 +85,6 @@ h1,h2 {
 }
 
 @media (min-width: 768px) {
-
   .main-btn-grp .btn {   
     min-width: 150px;
   }
@@ -143,7 +142,6 @@ h1,h2 {
 .contact-section p {
   margin: 0;
   font-size: 20px;
-
 }
 
 .contact-info {
@@ -173,7 +171,6 @@ footer {
   color: #fff;
   background-color: #111;
 }
-
 
 /* Polaroids */
 ul.polaroids {z-index: 5;}
