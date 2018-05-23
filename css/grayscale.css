@@ -61,6 +61,7 @@ p {
 .navbar-custom .navbar-brand:focus {
   outline: none;
 }
+.navbar-custom .navbar-brand:visited,
 .navbar-custom a {
   color: white;
 }
@@ -69,15 +70,20 @@ p {
   -moz-transition: background 0.3s ease-in-out;
   transition: background 0.3s ease-in-out;
 }
+.navbar-custom .navbar-brand:hover,
 .navbar-custom .nav li a:hover {
   color: rgba(255, 255, 255, 0.8);
   outline: none;
   background-color: transparent;
 }
+
+.navbar-custom .navbar-brand:focus,
+.navbar-custom .navbar-brand:active,
 .navbar-custom .nav li a:focus,
 .navbar-custom .nav li a:active {
   outline: none;
   background-color: transparent;
+  color: rgba(255, 255, 255, 0.8);
 }
 .navbar-custom .nav li.active {
   outline: none;
